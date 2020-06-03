@@ -1,0 +1,639 @@
+﻿.container {
+    max-width: 1024px;
+    max-height: 600px;
+    align-content:center;
+}
+
+body {
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    text-shadow: 0 10px 16px black, 0 10px 14px gray;
+}
+.text-color{
+    color:maroon;
+}
+.btnGoBack {
+    background-color: maroon;
+    border-radius: 15%;
+    color: white;
+    border: 2px double White;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 30px;
+    position: fixed;
+}
+
+.playTable {
+    background-color: darkgreen;
+    height: 550px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    border-radius: 15px/45px;
+    border: 15px ridge #D2691E;
+    box-shadow: 0 10px 16px black, 0 10px 14px gray;
+}
+
+.roundcorner {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+    height: 75px;
+    width: 75px;
+    border: 5px dashed white;
+    box-shadow: 0 10px 16px black, 0 10px 14px gray;
+}
+
+.btnOne {
+    background-color: red;
+}
+
+.btnFive {
+    background-color: lightgreen;
+}
+
+.btnTwentyFive {
+    background-color: dodgerblue;
+}
+
+.btnFifty {
+    background-color: black;
+}
+
+.btnHundred {
+    background-color: mediumpurple;
+}
+
+.btnClearBet {
+    background-color: navajowhite;
+    border-radius: 10%;
+    color: black;
+    border: 5px dashed black;
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.btnDeal {
+    background-color: deepskyblue;
+    border-radius: 25%;
+    color: black;
+    border: 2px double White;
+    height: 40px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 35px;
+    position: fixed;
+}
+
+.btnHit {
+    margin-left: 250px;
+}
+
+.btnStand {
+    margin-left: 390px;
+}
+
+.btnNewGame {
+    margin-left: 300px;
+}
+
+.lblBank {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0px 0px 0px 35px;
+}
+
+.lblAmt {
+    margin-left: 0px;
+    height: 20px;
+}
+
+.topMargin {
+    margin-top: 300px;
+    height: 40px;
+}
+
+.messagealert {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 100000;
+    padding: 0;
+    font-size: 15px;
+}
+
+.person {
+    height: 130px;
+    width: 130px;
+}
+
+.space {
+    float: left;
+    width: 20%;
+    padding-left: 100px;
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+}
+/* align content to the left */
+#main_content {
+    width: 70%;
+    float: left;
+    align-content: center;
+}
+/* align sidebar to the right */
+.aside {
+    float: right;
+    width: 15%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.RestartPanel {
+    background-color: #90d5ec;
+    background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 74%);
+    display: inline-block;
+    margin-left: 350px;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom:100px;
+    text-shadow:0px;
+}
+.btnRestart {
+    background-color: deepskyblue;
+    border-radius: 25%;
+    color: black;
+    border: 2px double White;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img1 {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    height: 134px;
+}
+
+.imgB1 {
+    left: 500px;
+}
+
+.imgB2 {
+    left: 550px;
+}
+
+.imgB3 {
+    left: 600px;
+}
+
+.imgB4 {
+    left: 650px;
+}
+
+.imgB5 {
+    left: 700px;
+}
+
+.imgB6 {
+    left: 750px;
+}
+
+.imgB7 {
+    left: 800px;
+}
+
+.imgB8 {
+    left: 850px;
+}
+
+.imgB9 {
+    left: 900px;
+}
+
+.homeImg {
+    height: 300px;
+    width: 300px;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    height: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+    text-align: center;
+    align-content: center;
+    display: block;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    border-radius: 10px/30px;
+    padding-bottom: 90px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #13547a 50%, darkgreen 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.roundValue {
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bold;
+    height: 25px;
+    width: 25px;
+    border: 1px ridge white;
+    background-color: brown;
+}
+
+.btnPlay {
+    height: 57px;
+    width: 214px;
+    Font-Size: larger;
+    background-color: maroon;
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnDeal, .btnNewGame, .btnStand, .btnRestart {
+    text-shadow: 0 2px 2px white;
+}
+
+@media(max-width:1024px) {
+    .lblBank, .lblAmt {
+        font-size: 18px;
+    }
+
+    .playTable {
+        height: 550px;
+        width: 997px;
+        border: 8px ridge #D2691E;
+    }
+}
+
+@media(max-width:768px) {
+    .playTable {
+        height: 550px;
+        padding-top: 50px;
+        width: 741px;
+        border: 5px ridge #D2691E;
+    }
+    .btnPlay{
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        align-content:center;
+    }
+    .roundcorner {
+        height: 65px;
+        width: 65px;
+        font-size: 15px;
+    }
+
+    .btnClearBet {
+        font-size: 10px;
+    }
+
+    .imgB1 {
+        left: 260px;
+    }
+
+    .imgB2 {
+        left: 290px;
+    }
+
+    .imgB3 {
+        left: 320px;
+    }
+
+    .imgB4 {
+        left: 350px;
+    }
+
+    .imgB5 {
+        left: 380px;
+    }
+
+    .imgB6 {
+        left: 410px;
+    }
+
+    .imgB7 {
+        left: 440px;
+    }
+
+    .imgB8 {
+        left: 470px;
+    }
+
+    .imgB9 {
+        left: 500px;
+    }
+
+    .btnHit {
+        margin-left: 30px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .btnStand {
+        margin-left: 130px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .btnNewGame {
+        margin-left: 70px;
+        width: 80px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:425px) {
+    .playTable {
+        height: 550px;
+        padding-top:50px;
+        width: 398px;
+        border: 4px ridge #D2691E;
+    }
+    .btnPlay {
+        height: 60px;
+        width: 150px;
+        align-content:center;
+    }
+
+    .homeImg {
+        height: 250px;
+        width: 250px;
+    }
+
+    .heading {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .roundcorner {
+        height: 57px;
+        width: 57px;
+        font-size: 15px;
+        padding: 1px;
+    }
+
+    .btnGoBack {
+        font-size: 15px;
+    }
+
+    .btnClearBet {
+        font-size: 9px;
+    }
+
+    .person {
+        visibility: hidden;
+    }
+
+    .lblBank, .lblAmt {
+        font-size: 10px;
+    }
+
+    .btnDeal {
+        border: 1px double White;
+        height: 30px;
+        width: 50px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .img1 {
+        width: 90px;
+        height: 120px;
+    }
+    .imgB1 {
+        left: 80px;
+    }
+
+    .imgB2 {
+        left: 100px;
+    }
+
+    .imgB3 {
+        left: 120px;
+    }
+
+    .imgB4 {
+        left: 140px;
+    }
+
+    .imgB5 {
+        left: 160px;
+    }
+
+    .imgB6 {
+        left: 180px;
+    }
+
+    .imgB7 {
+        left: 200px;
+    }
+
+    .imgB8 {
+        left: 220px;
+    }
+
+    .imgB9 {
+        left: 240px;
+    }
+
+    .btnHit {
+        margin-left: 30px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .btnStand {
+        margin-left: 130px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .btnNewGame {
+        margin-left: 70px;
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .RestartPanel {
+        padding: 20px;
+    }
+
+    .btnRestart {
+        height: 50px;
+        width: 80px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #alert_div {
+        font-size: 12px;
+    }
+    .RestartPanel {
+        
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-shadow: 0px;
+    }
+}
+
+@media(max-width:375px) {
+    .playTable {
+        height: 550px;
+        padding-top: 50px;
+        width: 348px;
+        border: 4px ridge #D2691E;
+    }
+    .roundcorner {
+        height: 52px;
+        width: 52px;
+    }
+
+    .btnHit {
+        margin-left: 20px;
+        width: 60px;
+    }
+
+    .btnStand {
+        margin-left: 100px;
+        width: 60px;
+    }
+
+    .btnNewGame {
+        margin-left: 60px;
+        width: 80px;
+    }
+
+    #alert_div {
+        font-size: 9px;
+    }
+}
+
+@media(max-width:320px) {
+    .playTable {
+        height: 550px;
+        padding-top: 50px;
+        width: 298px;
+        border: 4px ridge #D2691E;
+    }
+    .roundcorner {
+        height: 45px;
+        width: 45px;
+        margin-top: 15px;
+    }
+
+    .btnClearBet {
+        font-size: 13px;
+    }
+
+    .btnHit {
+        margin-left: 5px;
+        width: 50px;
+    }
+
+    .btnStand {
+        margin-left: 60px;
+        width: 50px;
+    }
+
+    .btnNewGame {
+        margin-left: 40px;
+        width: 80px;
+    }
+
+    .img1 {
+        width: 80px;
+        height: 106px;
+    }
+
+    #alert_div {
+        font-size: 7px;
+    }
+}
