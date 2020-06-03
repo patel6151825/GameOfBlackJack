@@ -1,0 +1,38 @@
+Blackjack (21)
+--------------------------
+
+
+Implement a program that plays the game of Blackjack. The user will be the single player in the game, and the computer will be the dealer. Use 
+the game rules specified below. The purpose of this project is to demonstrate your logic and programming skills, and is not intended to endorse 
+any form of gambling whatsoever, legal or otherwise.
+
+Rules of the Game
+
+Basics
+
+The player competes against the dealer. The objective of the game is to have a higher point total than the dealer without going over 21. 
+Each ace counts as either 1 point or 11 points, face cards (kings, queens, jacks) count 10 points each, and all other cards (2 through 9) count 
+their face value. This blackjack game will be played with a single deck of 52 cards at a time.
+
+Betting
+
+Before the deal, the player places a bet. The player may bet any amount from $1 to $100. When a player's bank account is zero or negative the game 
+is over. The player starts the game with $500. Of course, we are dealing with only imaginary money for this project.
+
+Game Play
+
+At the beginning of each game the cards are shuffled. At the beginning of each hand, the dealer deals two cards to the player and two cards to 
+himself. The player's cards are dealt face up, while one of the dealer's cards is dealt face up and the other is face down. After the deal, the 
+dealer asks the player whether they want an additional card. The player may "Stand" -- play just the two cards originally dealt or may "Hit"-- take 
+another card. After being dealt an additional card, the player may stop or may take still another card. A player may take as many cards as they want,
+but as soon as the player's total equals or exceeds 21, the game is over. If the players total exceeds 21 then the player loses -- regardless of 
+what the dealer has. If the players hand equals 21, then the player has won (unless the dealers total is also 21). After the player stands, the 
+dealer's remaining card is exposed. The dealer must then hit or stand according to these rules: 1. The dealer must count an ace as 11 points, 
+unless this causes the dealer to bust. Then the dealer must count the ace as 1 point. 2. If the dealer has a total of 17 points or more, he must 
+stand. 3. If the dealer has a total of less than 17 points, he must hit. If the dealer "busts" by going over 21, the player wins. In case of 
+a tie (known as a push), the player's bet is returned (no money changes hands). If a player's or the dealer's first two cards total 21 (an ace and 
+a 10 or face card), the holding is known as a blackjack. A player with blackjack is paid extra -- one-and-a-half times the original bet -- unless 
+the dealer also has blackjack, in which case the player loses. The player may leave the game between any hands. This version of blackjack will not 
+implement rules for doubling down, splitting, or insurance.
+
+Make sure that your project can run as a standalone project (including the card images).
