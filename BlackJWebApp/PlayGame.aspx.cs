@@ -48,20 +48,14 @@ namespace BlackJWebApp
                 Session["PlayerWon"] = 0;
                 Session["DealerWon"] = 0;
                 Session["Push"] = 0;
-                Session["highBank"] = 500;
+                Session["highBank"] = 50;
                 player = (Player)Session["player"];
                 dealer = (Dealer)Session["dealer"];
 
             }
-            if (Convert.ToInt32(Session["bankAmount"]) <= 0)
-            {
-                //GAME OVER
-                //Hide main panel and show result panel
-                MainPanel.Visible = false;
-                PanelRestart.Visible = true;
-            }
+           
             //if bet amount is higher than bank amount
-            else if (Convert.ToInt32(Session["betAmount"]) > Convert.ToInt32(Session["bankAmount"]))
+            if (Convert.ToInt32(Session["betAmount"]) > Convert.ToInt32(Session["bankAmount"]))
             {
                 Session["betAmount"] = Convert.ToInt32(Session["bankAmount"]);
                 lblBetAmount.Text = Session["betAmount"].ToString() + " $";
@@ -364,7 +358,6 @@ namespace BlackJWebApp
             {
                 ShowMessage("Player Burst!");
                 Session["DealerWon"] = Convert.ToInt32(Session["DealerWon"]) + 1;
-                //int w = Convert.ToInt32(Session["DealerWon"]);
                 Session["bankAmount"] = Convert.ToInt32(Session["bankAmount"]);
                 btnHit.Visible = false;
                 btnStand.Visible = false;
@@ -456,25 +449,6 @@ namespace BlackJWebApp
                         dlImage11.Visible = true;
                     }
 
-                    //int cardValue6 = card.GetCardValue(dealerNextCard);
-
-                    //Session["dealerValue"] = Convert.ToInt32(Session["dealerValue"]) + cardValue6;
-                    
-                    //if new card is ace and dealer total points greater than 21 than make it value 1
-                    //if (Convert.ToInt32(Session["dealerValue"]) > 21 && cardValue6 == 11)
-                    //{
-                    //    cardValue6 = 1;
-                    //    Session["dealerValue"] = Convert.ToInt32(Session["dealerValue"]) - 10;
-                    //    ((List<int>)Session["dealerallCards"]).Add(cardValue6);
-                    //}
-                    ////if new card is 10 or jack or queen or king and value higher than 21
-                    //else if (Convert.ToInt32(Session["dealerValue"]) > 21 && cardValue6 == 10 && Convert.ToInt32(Session["dTwoA"]) == 1)
-                    //{
-                    //    Session["dealerValue"] = Convert.ToInt32(Session["dealerValue"]) - 10;
-                    //    ((List<int>)Session["dealerallCards"]).Add(cardValue6);
-                    //    Session["dTwoA"] = 0;
-                    //}
-
                     lblDealerValue.Text = dealerValue.ToString();
 
                     Session["allCards"] = allCards;
@@ -530,6 +504,7 @@ namespace BlackJWebApp
                 ShowMessage("Dealer Burst!");
                 Session["bankAmount"] = bankAmount + (2*betAmount);
                 Session["PlayerWon"] = Convert.ToInt32(Session["PlayerWon"]) + 1;
+                int p = Convert.ToInt32(Session["PlayerWon"]);
             }
             //if dealer points are more than player's points
             else if (dealerValue > playerValue)
